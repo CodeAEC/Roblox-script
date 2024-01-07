@@ -1,31 +1,31 @@
 _G.autofarm = true;
 
 spawn(function()
-  while _G.autofarm == true do
-    local args = {
-      [1] = "Strength"
-    }
-    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Train"):FireServer(unpack(args))
-    wait()
-  end
+    while _G.autofarm == true do
+        local args = {
+            [1] = "Strength"
+        }
+        game:GetService("ReplicatedStorage").Events.Train:FireServer(unpack(args))
+        wait()
+    end
 end)
 
 spawn(function()
-  while _G.autofarm == true do
-    local args = {
-    [1] = "Endurance"
-    }
-    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Train"):FireServer(unpack(args))
-    wait()
-  end
+    while _G.autofarm == true do
+        local args = {
+            [1] = "Endurance"
+        }
+        game:GetService("ReplicatedStorage").Events.Train:FireServer(unpack(args))
+        wait()
+    end
 end)
 
 spawn(function()
-  while _G.autofarm == true do
-    local args = {
-      [1] = "Psychic"
-    }
-    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Train"):FireServer(unpack(args))
-    wait()
-  end
+    while _G.autofarm == true do
+        local args = {
+            [1] = "Psychic"
+        }
+        game:GetService("ReplicatedStorage").Events.Train:FireServer(unpack(args))
+        wait()
+    end
 end)
